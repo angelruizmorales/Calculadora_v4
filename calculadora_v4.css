@@ -1,0 +1,133 @@
+/*
+Aquí vamos a tener todo lo que se referie a estilos de nuestra calculadora.
+*/
+
+* {
+    font-family: 'Fraunces', ;
+    color: #fff;
+}
+/*
+Fondo
+*/
+body {
+    margin: 0;
+    background-color: #224870;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+/*
+Cuerpo de la calculadora.
+*/
+.calculadora {
+    display: grid;
+    grid-template-columns: repeat(4, 75px);
+    grid-template-rows: 160px repeat(5, 75px);
+    background-color: #a2b1ae;
+    padding: 50px;
+    border-bottom-right-radius: 35px;
+    box-shadow: 15px 10px 0px 5px #00000033;
+}
+/*
+Botones.
+*/
+.button_v1{
+    cursor: pointer;
+    margin: 10px;
+    padding: 0;
+    border-radius: 32px;
+    font-size: 1.5em;
+    border: none;
+    background-color: #c2c0e0;
+}
+/*
+Botones.
+*/
+.button_v2 {
+    cursor: pointer;
+    margin: 10px;
+    padding: 0;
+    border-radius: 32px;
+    font-size: 1.5em;
+    border: none;
+    background-color: #000000;
+    
+}
+/*
+Botones.
+*/
+.button_v3 {
+    cursor: pointer;
+    margin: 10px;
+    padding: 0;
+    border-radius: 32px;
+    font-size: 1.5em;
+    border: none;
+    background-color: #c2c0e0;
+    grid-column: span 2;
+}
+/*
+Botones.
+*/
+.button_v4 {
+    cursor: pointer;
+    margin: 10px;
+    padding: 0;
+    border-radius: 32px;
+    font-size: 1.5em;
+    border: none;
+    background-color: #b1321e;
+}
+/*
+Botones.
+*/
+.button_v5 {
+    cursor: pointer;
+    margin: 10px;
+    padding: 0;
+    border-radius: 32px;
+    font-size: 1.5em;
+    border: none;
+    background-color: #373635;
+}
+/*
+Botones.
+*/
+button:active {
+    background-color: #006f54;
+}
+/*
+Botones.
+*/
+button:focus {
+    outline: none;
+}
+/*
+Pantalla de la calculadora.
+*/
+.pantalla {
+    grid-column: 1 / -1;
+    padding: 60px;
+    display: inline-block;
+    margin: 0px 0px 10px;
+    flex-direction: column;
+    align-items: flex-end;
+    background-color: #0db41bba;
+    text-align: right;
+    justify-content: space-between;
+    word-break: break-all;
+    box-shadow: 0px 0px 0px 15px #35175e33;
+        
+}
+
+#valor-actual {
+    font-size: 1.5em;
+}
+
+#valor-anterior {
+    font-size: 2em;
+}
