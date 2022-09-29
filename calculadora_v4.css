@@ -3,7 +3,7 @@ Aquí vamos a tener todo lo que se referie a estilos de nuestra calculadora.
 */
 
 * {
-    font-family: 'Fraunces', ;
+    font-family: 'Fraunces','Times New Roman', Times, serif ;
     color: #fff;
 }
 /*
